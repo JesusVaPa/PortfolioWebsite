@@ -1,6 +1,3 @@
 [build]
-  publish = "client/src/App.js"
-
-
-[build.environment]
-  NODE_VERSION = "14"  # Puedes especificar la versión de Node.js si es necesario
+  publish = "build"
+  command = "npm run build"
