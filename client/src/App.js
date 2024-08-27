@@ -46,7 +46,11 @@ function App() {
       </div>
       <div className="content">
         <p id="full-name"><span className="first-name">ANGEL</span> <span className="last-name">VAZQUEZ</span></p>
-        <span id="animated-text" ref={textRef}>On the path to becoming a software developer</span>
+        <span id="animated-text" ref={textRef}>On the path to becoming a software developer.</span>
+        <p >WELCOME TO MY PORTFOLIO AS A DEVELOPER IN TRAINING.</p>
+        <a href="/documents/AngelVazquezCV.pdf" download>
+          <button className="download-button">Download my CV</button>
+        </a>
       </div>
     </div>    
   );

@@ -54,7 +54,7 @@
 }
 
 .sidebar nav ul li a {
-  color: white;
+  color: rgb(178, 136, 189);
   text-decoration: none;
   font-size: 18px;
   text-align: center;
@@ -66,10 +66,12 @@
 }
 
 .sidebar nav ul li.active a {
-  color: #0dda5b; 
+  color: #8becb0; 
 }
 
 .content {
+  color: #61dafb;
+  font-size: 20px;
   padding: 20px;
   padding-top: 350px;  
   overflow-y: auto;
@@ -77,11 +79,11 @@
 }
 
 .first-name {
-  color: #d671e4; 
+  color: #e196eb; 
 }
 
 .last-name {
-  color: #0dda5b;
+  color: #8becb0;
 }
 
 #full-name {
@@ -91,9 +93,26 @@
 }
 
 #animated-text {
-  font-size: 1.5rem; 
+  font-size: 15px; 
   color: #ffda07; 
   white-space: nowrap; 
   overflow: hidden; 
   display: inline-block; 
+}
+
+.download-button {
+  background-color: #8becb0; /* Color del botón */
+  color: black; /* Color del texto del botón */
+  border: none; /* Quita el borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-top: 20px; /* Espaciado superior */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.download-button:hover {
+  background-color: #47775a; /* Color de fondo al pasar el ratón */
 }
