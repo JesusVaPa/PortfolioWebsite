@@ -11,7 +11,7 @@ function App() {
     }
   }, []);
 
-  const [text, setText] = useState('vapa.jesusangel@gmail.com');
+  const [text] = useState('vapa.jesusangel@gmail.com');
   
   const handleCopy = () => {
     navigator.clipboard.writeText(text).then(() => {
