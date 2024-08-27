@@ -1,0 +1,6 @@
+[build]
+  publish = "client/public"
+
+
+[build.environment]
+  NODE_VERSION = "14"  # Puedes especificar la versión de Node.js si es necesario
