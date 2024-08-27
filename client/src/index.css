@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1e3a5f  ;
 }
 
 code {
@@ -13,29 +12,3 @@ code {
     monospace;
 }
 
-.sidebar {
-  margin-top: 250px;
-  width: 200px;
-  background-color: #1e3a8a; 
-  color: white;
-  padding: 20px;
-}
-
-.sidebar nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar nav ul li {
-  margin: 20px 0;
-}
-
-.sidebar nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.sidebar nav ul li a:hover {
-  text-decoration: underline;
-}

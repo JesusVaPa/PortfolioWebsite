@@ -1,24 +1,54 @@
-import logo from './logo.svg';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import { typeWriterEffect } from './typeWriter';
 
 function App() {
+
+  const textRef = useRef(null);
+  useEffect(() => {
+    if (textRef.current) {
+      typeWriterEffect(textRef.current.id, 50); 
+    }
+  }, []);
+
+  const [activeSection, setActiveSection] = useState('home');
+
+  const handleNavigation = (section) => {
+    setActiveSection(section);
+
+  };
   return ( 
     <div className="App">
       <div className="sidebar">
-        <nav>
-        <img src="./media/picture.jpg" alt="Profile" className="profile-img" />
-
+      <img src="media/profile.png" alt="Profile" className="profile-img" />
+      <nav>
           <ul>
-            <li><a href="#home">Angel</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li className={activeSection === 'home' ? 'active' : ''}>
+              <a href="#home" onClick={() => handleNavigation('home')}>ANGEL</a>
+            </li>
+            <li className={activeSection === 'about' ? 'active' : ''}>
+              <a href="#about" onClick={() => handleNavigation('about')}>ABOUT ME</a>
+            </li>
+            <li className={activeSection === 'portfolio' ? 'active' : ''}>
+              <a href="#portfolio" onClick={() => handleNavigation('portfolio')}>PORTFOLIO</a>
+            </li>
+            <li className={activeSection === 'education' ? 'active' : ''}>
+              <a href="#education" onClick={() => handleNavigation('education')}>EDUCATION</a>
+            </li>
+            <li className={activeSection === 'skills' ? 'active' : ''}>
+              <a href="#skills" onClick={() => handleNavigation('skills')}>SKILLS</a>
+            </li>
+            <li className={activeSection === 'contact' ? 'active' : ''}>
+              <a href="#contact" onClick={() => handleNavigation('contact')}>CONTACT</a>
+            </li>
           </ul>
         </nav>
       </div>
-    </div>
+      <div className="content">
+        <p id="full-name"><span className="first-name">ANGEL</span> <span className="last-name">VAZQUEZ</span></p>
+        <span id="animated-text" ref={textRef}>On the path to becoming a software developer</span>
+      </div>
+    </div>    
   );
 }
 

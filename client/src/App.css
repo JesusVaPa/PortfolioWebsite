@@ -1,16 +1,11 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/Oaback-j9DLR.otf') format('truetype'); 
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 100vh;  
+  background-color: #230c4e; 
 }
 
 .App-header {
@@ -28,11 +23,77 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  width: 200px;
+  background-color: #3f1d6b; 
+  color: white;
+  padding: 20px;
+  padding-top: 250px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100vh; 
+  position: fixed; 
+  font-weight: bold;
+}
+
+.profile-img {
+  width: 100px; 
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  display: block; 
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav ul li.active a {
+  color: #0dda5b; 
+}
+
+.content {
+  padding: 20px;
+  padding-top: 350px;  
+  overflow-y: auto;
+  padding-left: 400px;
+}
+
+.first-name {
+  color: #d671e4; 
+}
+
+.last-name {
+  color: #0dda5b;
+}
+
+#full-name {
+  font-family: 'MyCustomFont', Oaback-j9DLR; 
+  font-weight: bold;
+  font-size: 45px;
+}
+
+#animated-text {
+  font-size: 1.5rem; 
+  color: #ffda07; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  display: inline-block; 
 }
