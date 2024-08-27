@@ -11,6 +11,14 @@ function App() {
     }
   }, []);
 
+  const [text, setText] = useState('vapa.jesusangel@gmail.com');
+  
+  const handleCopy = () => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Email copied to clipboard!');
+    });
+  };
+
   const [activeSection, setActiveSection] = useState('home');
 
   const handleNavigation = (section) => {
@@ -51,6 +59,18 @@ function App() {
         <a href="/documents/AngelVazquezCV.pdf" download>
           <button className="download-button">Download my CV</button>
         </a>
+        <div className="email-section">
+          <input 
+            type="text" 
+            value={text} 
+            readOnly 
+            id="email-input" 
+            className="email-input" 
+          />
+          <button className="copy-button" onClick={handleCopy}>
+            Copy Email
+          </button>
+        </div>
       </div>
     </div>    
   );
