@@ -1,0 +1,45 @@
+.sidebar {
+    width: 200px;
+    background-color: #3f1d6b; 
+    color: white;
+    padding: 20px;
+    padding-top: 220px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh; 
+    position: fixed; 
+    font-weight: bold;
+}
+  
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0; 
+}
+
+.sidebar nav ul li a {
+    color: rgb(178, 136, 189);
+    text-decoration: none;
+    font-size: 28px;
+    text-align: center;
+    display: block; 
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar nav ul li.active a {
+    color: #8becb0; 
+}
+
+.profile-img {
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 20px;
+}

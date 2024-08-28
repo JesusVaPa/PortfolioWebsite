@@ -1,0 +1,29 @@
+.aboutMe{
+    font-size: 20px;
+    color: #61dafb;
+    padding: 20px;
+    padding-top: 200px;  
+    overflow-y: auto;
+    padding-left: 400px;
+}
+
+#about{
+    width: 70%;    
+    margin-bottom: 150px;    
+}
+
+.sectionTitle{
+    font-weight: bold;
+    font-size: 55px;
+    color: #e196eb;
+}
+
+.emphText{
+    font-size: 25px;
+    color: #e196eb;
+}
+
+.link{
+    color: aquamarine;
+    text-decoration: underline;
+}

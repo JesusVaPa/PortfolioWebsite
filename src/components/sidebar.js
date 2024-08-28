@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/sidebar.css';
 
 function Sidebar({ activeSection, handleNavigation }) {
   return (

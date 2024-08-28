@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import '../css/content.css';
+import { typeWriterEffect } from './typeWriter.js';
 
 function Content({ activeSection }) {
   const textRef = useRef(null);
@@ -8,6 +10,10 @@ function Content({ activeSection }) {
     navigator.clipboard.writeText(text);
     alert("Email copied to clipboard!");
   };
+
+  useEffect(() => {
+    typeWriterEffect('animated-text', 70); 
+  }, []);
 
   return (
     <>

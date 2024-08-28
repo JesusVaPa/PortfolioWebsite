@@ -1,0 +1,80 @@
+.content {
+    color: #61dafb;
+    font-size: 30px;
+    padding: 20px;
+    padding-top: 200px;  
+    overflow-y: auto;
+    padding-left: 400px;   
+  }
+  
+  .first-name {
+    color: #e196eb; 
+  }
+  
+  .last-name {
+    color: #8becb0;
+  }
+  
+  #full-name {
+    font-family: 'MyCustomFont', Oaback-j9DLR; 
+    font-weight: bold;
+    font-size: 65px;
+  }
+  
+  #animated-text {
+    font-size: 25px; 
+    color: #ffda07; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    display: inline-block; 
+  }
+  
+  .download-button {
+    background-color: #8becb0;
+    color: black; 
+    border: none;   
+    padding: 10px 20px; 
+    font-size: 26px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+    text-align: center; 
+    text-decoration: none; 
+  }
+  
+  .download-button:hover {
+    background-color: #47775a; 
+  }
+  
+  .email-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .email-input {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 340px;
+    margin-bottom: 169px;
+  }
+  
+  .copy-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    background-color: #8becb0; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 171px;
+    
+  }
+  
+  .copy-button:hover {
+    background-color: #47775a; 
+  }
