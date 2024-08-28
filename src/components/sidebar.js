@@ -1,10 +1,11 @@
 import React from 'react';
 import '../css/sidebar.css';
+import profileImage from '../media/profile.png';
 
 function Sidebar({ activeSection, handleNavigation }) {
   return (
     <div className="sidebar">
-      <img src="media/profile.png" alt="Profile" className="profile-img" />
+      <img src={profileImage} alt="Profile" className="profile-img" />
       <nav>
         <ul>
           <li className={activeSection === 'home' ? 'active' : ''}>

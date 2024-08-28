@@ -39,7 +39,11 @@
 }
 
 .profile-img {
-    width: 100px; 
-    height: 100px;
+    width: 200px; 
+    height: 200px;
     margin-bottom: 20px;
+    border-radius: 35px;
+    border-color: #8becb0;
+    border-width: 2px;
+    border-style: groove;
 }

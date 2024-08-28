@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
-import '../css/content.css';
+import '../css/home.css';
 import { typeWriterEffect } from './typeWriter.js';
 
-function Content({ activeSection }) {
+function Home({ activeSection }) {
+  
   const textRef = useRef(null);
   const [text] = useState("vapa.jesusangel@gmail.com");
 
@@ -16,7 +17,7 @@ function Content({ activeSection }) {
   }, []);
 
   return (
-    <>
+    <div id='home'>
       <p id="full-name">
         <span className="first-name">ANGEL</span> <span className="last-name">VAZQUEZ</span>
       </p>
@@ -37,8 +38,8 @@ function Content({ activeSection }) {
           Copy Email
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
-export default Content;
+export default Home;
