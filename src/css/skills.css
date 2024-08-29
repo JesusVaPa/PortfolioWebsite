@@ -14,20 +14,6 @@ h1{
     color: #c770d3;
 }
 
-li {
-    list-style-type: none; 
-    position: relative; 
-    padding-left: 20px;
-  }
-  
-  li::before {
-    content: '\2713'; 
-    color: green; 
-    position: absolute; 
-    left: 0; 
-    top: 0;
-  }
-
 i{
     background-color: rgb(208, 184, 214);
     padding: 5px;
