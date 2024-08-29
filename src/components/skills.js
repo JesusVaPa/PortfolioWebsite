@@ -34,6 +34,8 @@ function Skills() {
         <ul>
             <li>Amazon Web Services online course by <a href='https://midu.dev/' className='link' target="_blank" rel='noreferrer'>Midudev.</a></li>
             <li>The Git & Github Bootcamp by <a href='https://www.udemy.com/user/coltsteele/' className='link' target="_blank" rel='noreferrer'>Colt Steele.</a></li>
+            <li>Android Mobile Applications at LaSalle College.</li>
+            <li>Web Server at LaSalle College.</li>
         </ul>
     </div>
   );

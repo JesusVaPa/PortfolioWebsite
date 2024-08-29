@@ -1,0 +1,23 @@
+#contact{
+    font-size: 25px;
+    color: #61dafb;
+    padding: 20px;
+    padding-top: 200px;  
+    padding-left: 400px;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+    background-color: #230c4e; 
+}
+
+#icon{
+    background-color: transparent;
+    border: none;
+}
+
+.sec{
+    color: aquamarine;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
