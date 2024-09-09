@@ -4,6 +4,7 @@
     min-height: 100vh; 
     box-sizing: border-box; 
     background-color: #230c4e; 
+    padding-top: 200px;
 }
 
 .sectionTitle{
@@ -15,3 +16,11 @@
     color: aquamarine;
     text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+    #portfolio{
+        font-size: 20px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+  }
