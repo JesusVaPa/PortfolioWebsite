@@ -1,9 +1,10 @@
 #contact{
-    font-size: 25px;
+    font-size: 20px;
     color: #61dafb;
     min-height: 100vh; 
     box-sizing: border-box; 
     background-color: #230c4e; 
+    padding-top: 200px;
 }
 
 #icon{
@@ -17,4 +18,34 @@
     font-size: 20px;
 }
 
+.copied-message {
+    color: limegreen;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    animation: fadeOut 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    #contact {
+      padding-top: 50px;
+      padding-right: 15px;
+      padding-left: 30px;
+    }
+
+    .sec{
+        font-size: 13px;
+    }
+    .copied-message {
+        font-size: 0.8rem;
+      }
+  }
 
