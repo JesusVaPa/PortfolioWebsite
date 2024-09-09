@@ -17,7 +17,7 @@ function App() {
 
   const handleNavigation = (section) => {
     setActiveSection(section);
-    setSidebarOpen(false); // Cerrar el menú después de la navegación en pantallas pequeñas
+    setSidebarOpen(false); 
   };
 
   const renderSection = () => {
