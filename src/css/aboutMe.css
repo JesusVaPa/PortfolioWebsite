@@ -4,11 +4,12 @@
     min-height: 100vh; 
     box-sizing: border-box; 
     background-color: #230c4e; 
+    padding-top: 200px;
 }
 
 .sectionTitle{
     font-weight: bold;
-    font-size: 55px;
+    font-size: 4rem;
     color: #e196eb;
 }
 
@@ -26,3 +27,23 @@ p {
     margin-right: 25%;
     text-align: justify;
 }
+
+@media (max-width: 576px) {
+    #about{
+        font-size: 20px;
+        color: #61dafb;
+        min-height: 100vh; 
+        box-sizing: border-box; 
+        background-color: #230c4e; 
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .sectionTitle{
+        font-size: 2rem;
+    }
+    .emphText{
+        font-size: 0.8rem;
+    }
+
+  }
