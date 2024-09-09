@@ -5,26 +5,28 @@ import profileImage from '../media/profile.png';
 function Sidebar({ activeSection, handleNavigation }) {
   return (
     <div className="sidebar">
-      <img src={profileImage} alt="Profile" className="profile-img" />
+      <div className="profile-img-container">
+        <img src={profileImage} alt="Profile" className="profile-img" />
+      </div>
       <nav>
-        <ul>
-          <li className={activeSection === 'home' ? 'active' : ''}>
-            <a href="#home" onClick={() => handleNavigation('home')}>ANGEL</a>
+        <ul className="nav flex-column">
+          <li className={`nav-item ${activeSection === 'home' ? 'active' : ''}`}>
+            <a href="#home" onClick={() => handleNavigation('home')} className="nav-link">Home</a>
           </li>
-          <li className={activeSection === 'about' ? 'active' : ''}>
-            <a href="#about" onClick={() => handleNavigation('about')}>ABOUT ME</a>
+          <li className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}>
+            <a href="#about" onClick={() => handleNavigation('about')} className="nav-link">About Me</a>
           </li>
-          <li className={activeSection === 'portfolio' ? 'active' : ''}>
-            <a href="#portfolio" onClick={() => handleNavigation('portfolio')}>PORTFOLIO</a>
+          <li className={`nav-item ${activeSection === 'portfolio' ? 'active' : ''}`}>
+            <a href="#portfolio" onClick={() => handleNavigation('portfolio')} className="nav-link">Portfolio</a>
           </li>
-          <li className={activeSection === 'education' ? 'active' : ''}>
-            <a href="#education" onClick={() => handleNavigation('education')}>EDUCATION</a>
+          <li className={`nav-item ${activeSection === 'education' ? 'active' : ''}`}>
+            <a href="#education" onClick={() => handleNavigation('education')} className="nav-link">Education</a>
           </li>
-          <li className={activeSection === 'skills' ? 'active' : ''}>
-            <a href="#skills" onClick={() => handleNavigation('skills')}>SKILLS</a>
+          <li className={`nav-item ${activeSection === 'skills' ? 'active' : ''}`}>
+            <a href="#skills" onClick={() => handleNavigation('skills')} className="nav-link">Skills</a>
           </li>
-          <li className={activeSection === 'contact' ? 'active' : ''}>
-            <a href="#contact" onClick={() => handleNavigation('contact')}>CONTACT</a>
+          <li className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}>
+            <a href="#contact" onClick={() => handleNavigation('contact')} className="nav-link">Contact</a>
           </li>
         </ul>
       </nav>

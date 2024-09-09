@@ -1,49 +1,84 @@
 .sidebar {
-    width: 200px;
-    background-color: #3f1d6b; 
+    width: 15%;
+    background-color: #3f1d6b;
     color: white;
     padding: 20px;
-    padding-top: 220px; 
+    padding-top: 15vh; 
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    height: 100vh; 
-    position: fixed; 
+    align-items: center;
+    height: 100vh;
+    position: fixed;
     font-weight: bold;
-}
-  
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
+    transition: all 0.3s ease; 
 }
 
-.sidebar nav ul li {
-    margin: 20px 0; 
-}
-
-.sidebar nav ul li a {
+.nav-link {
     color: rgb(178, 136, 189);
     text-decoration: none;
-    font-size: 28px;
+    font-size: 2vw; 
     text-align: center;
-    display: block; 
+    display: block;
 }
 
-.sidebar nav ul li a:hover {
+.nav-link:hover {
     text-decoration: underline;
 }
 
-.sidebar nav ul li.active a {
-    color: #8becb0; 
+.nav-item {
+    font-size: 2vw; 
+}
+
+.nav-item.active .nav-link {
+    color: #8becb0;
+}
+
+.navbar-toggler {
+    background-color: #8becb0;
+    border: none;
+    margin: 10px;
+}
+
+.navbar-toggler-icon {
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .nav-link, .nav-item {
+        font-size: 4vw; 
+    }
+}
+
+.profile-img-container {
+    margin-bottom: 20px;
+    width: 80%;  
 }
 
 .profile-img {
-    width: 200px; 
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 35px;
-    border-color: #8becb0;
+    width: 100%;
+    height: auto;
     border-width: 2px;
-    border-style: groove;
+    border-color: #8becb0;
+    border-style: solid;
+    transition: all 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    .profile-img-container {
+        width: 60%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img-container {
+        width: 30%;  
+    }
 }

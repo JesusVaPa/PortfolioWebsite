@@ -7,12 +7,17 @@ import Education from './components/education';
 import Skills from './components/skills';
 import Contact from './components/contact';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const handleNavigation = (section) => {
     setActiveSection(section);
+    setSidebarOpen(false); // Cerrar el menú después de la navegación en pantallas pequeñas
   };
 
   const renderSection = () => {
@@ -36,8 +41,19 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar activeSection={activeSection} handleNavigation={handleNavigation} />
-      {renderSection()}
+      <button
+        className="btn btn-primary d-md-none" 
+        type="button"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}  
+      >
+        <i className="bi bi-list" style={{ fontSize: '1.5rem' }}></i>
+      </button>
+      <div className={`sidebar-container ${isSidebarOpen ? 'd-block' : 'd-none'} d-md-block`}>
+        <Sidebar activeSection={activeSection} handleNavigation={handleNavigation} />
+      </div>
+      <div className="content">
+        {renderSection()}
+      </div>
     </div>
   );
 }

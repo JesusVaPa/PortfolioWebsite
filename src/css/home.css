@@ -1,10 +1,9 @@
 #home {
     color: #61dafb;
     font-size: 30px;
-    padding: 20px;
-    padding-top: 170px;  
+    padding: 20px;  
     overflow-y: auto;
-    padding-left: 400px;   
+    padding-top: 200px;
   }
   
   .first-name {
@@ -18,11 +17,11 @@
   #full-name {
     font-family: 'MyCustomFont', Oaback-j9DLR; 
     font-weight: bold;
-    font-size: 65px;
+    font-size: 5rem;
   }
   
   #animated-text {
-    font-size: 25px; 
+    font-size: 2rem; 
     color: #ffda07; 
     white-space: nowrap; 
     overflow: hidden; 
@@ -34,10 +33,10 @@
     color: black; 
     border: none;   
     padding: 10px 20px; 
-    font-size: 26px; 
+    font-size: 2rem; 
     cursor: pointer; 
     border-radius: 5px; 
-    margin-top: 20px; 
+    margin-top: 30px; 
     margin-bottom: 50px;
     text-align: center; 
   }
@@ -49,12 +48,13 @@
   .email-section {
     display: flex;
     align-items: center;
+    flex-direction: row;
     margin-top: 20px;
   }
   
   .email-input {
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
@@ -63,7 +63,7 @@
   
   .copy-button {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: black;
     background-color: #8becb0; 
     border: none;
@@ -74,3 +74,31 @@
   .copy-button:hover {
     background-color: #47775a; 
   }
+
+  @media (max-width: 576px) {
+    #full-name {
+      font-size: 2rem;
+    }
+
+    #animated-text {
+      font-size: 1rem; 
+    }
+  
+    .download-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      margin-top: 10px; 
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  
+    .email-input, .copy-button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+
+  

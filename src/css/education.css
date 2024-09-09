@@ -1,32 +1,27 @@
-#education{
+#education {
     font-size: 20px;
     color: #61dafb;
-    padding: 20px;
-    padding-top: 200px;  
-    padding-left: 400px;
-    min-height: 100vh; 
-    box-sizing: border-box; 
     background-color: #230c4e; 
 }
 
-h1{
+.sectionTitle {
+    font-weight: bold;
+    font-size: 55px;
+    color: #e196eb;
+    margin-bottom: 40px;
+}
+
+h1 {
     font-size: 25px;
     color: #c770d3;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin-right: 40%;
 }
 
 h2{
     font-size: 20px;    
 }
 
-.eduBlock{
-    margin-bottom: 80px;
-}
-
-.date{
+.date {
     color: aquamarine;
     font-size: 12px;
 }
+
