@@ -1,17 +1,18 @@
 #skills{
-    font-size: 20px;
     color: #61dafb;
     min-height: 100vh; 
     box-sizing: border-box; 
     background-color: #230c4e; 
+    padding-top: 90px;
 }
 
 h1{
-    font-size: 25px;
+    font-size: 2rem;
     color: #c770d3;
 }
 
 i{
+    font-size: 1.5rem;
     background-color: rgb(208, 184, 214);
     padding: 5px;
     border: rgb(82, 82, 82);
@@ -20,9 +21,14 @@ i{
     margin-right: 5px;
 }
 
+li{
+    color: #c770d3;
+}
+
 .logoBlock{
+    display: flex;
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .date{
@@ -35,3 +41,20 @@ i{
     text-decoration: underline;
 }
 
+@media (max-width: 576px) {
+    #skills {
+      font-size: 16px;
+      padding-top: 50px;
+      padding-right: 15px;
+      padding-left: 30px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    i {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  }
