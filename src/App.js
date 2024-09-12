@@ -6,10 +6,10 @@ import Portfolio from './components/portfolio';
 import Education from './components/education';
 import Skills from './components/skills';
 import Contact from './components/contact';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');

@@ -1,60 +1,100 @@
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('fonts/Oaback-j9DLR.otf') format('truetype'); 
+font-family: 'MyCustomFont';
+src: url('fonts/Oaback-j9DLR.otf') format('truetype'); 
 }
 
 .App {
-  background-color: #230c4e; 
-  min-height: 100vh; 
+background-color: #230c4e; 
+min-height: 100vh; 
 }
 
 .App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+background-color: #282c34;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
 }
 
 .App-link {
-  color: #61dafb;
+color: #61dafb;
 }
 
 .btn-primary {
-  background-color: #230c4e;
-  border: none;
-  padding: 10px;
+background-color: #230c4e;
+border: none;
+padding: 10px;
 }
 
 .btn-primary i {
-  color: #ffffff;
+color: #ffffff;
 }
 
 .bi {
-  background-color: #230c4e;
+background-color: #230c4e;
 
 }
 
+.btn-primary {
+--bs-btn-bg: transparent; 
+--bs-btn-border-color: transparent; 
+--bs-btn-hover-bg: transparent;
+--bs-btn-hover-bg: transparent !important;
+border: none;
+--bs-btn-active-border-color: #8becb0 !important
+}
+
+.btn-primary:focus,.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #8becb0 !important; 
+    border-color: transparent !important;   
+    color: white !important; 
+}
+
+
 @media (max-width: 576px) {
-  .App {
-    font-size: 13px; 
-  }
+.App {
+  font-size: 13px; 
+}
 
-  .btn-primary {
-    padding: 8px;
-    font-size: 1rem;
-  }
+.btn-primary {
+  padding: 8px;
+  font-size: 1rem;
+}
 
-  .bi-list {
-    font-size: 1.2rem;
-  }
+.bi-list {
+  font-size: 1.2rem;
+}
 }
 
 @media (min-width: 992px) {
-  .content {
-    margin-left: 450px; 
-  }
+.content {
+  margin-left: 450px; 
+}
+
+.btn-primary {
+  --bs-btn-bg: transparent; 
+  --bs-btn-border-color: transparent; 
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-bg: transparent !important;
+  border: none;
+  --bs-btn-active-bg: transparent !important; 
+  --bs-btn-active-border-color: transparent !important
+}   
+
+.btn-primary:focus,.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #8becb0 !important; 
+    border-color: transparent !important;   
+    color: white !important; 
+}
+
+.btn-primary i {
+  color: white; 
+}
 }
 
