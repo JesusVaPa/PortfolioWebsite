@@ -7,10 +7,16 @@ function Home({ activeSection }) {
   const textRef = useRef(null);
   const [text] = useState("vapa.jesusangel@gmail.com");
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(text);
-    alert("Email copied to clipboard!");
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); 
+      })
+      .catch(err => console.error('Failed to copy email: ', err));
   };
+
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     typeWriterEffect('animated-text', 70); 
@@ -34,9 +40,14 @@ function Home({ activeSection }) {
           id="email-input"
           className="email-input"
         />
-        <button className="copy-button" onClick={handleCopy}>
+        <button 
+          className="copy-button" 
+          onClick={handleCopyEmail} 
+          style={{ cursor: 'pointer' }}
+        >
           Copy Email
         </button>
+        {copied && <span className="copied-message"> Copied!</span>}
       </div>
     </div>
   );
