@@ -17,10 +17,36 @@
     text-decoration: underline;
 }
 
+.video-container {
+    display: flex;
+    margin-top: 20px;
+}
+  
+.clickable-video {
+    width: 400px; 
+    height: 300px; 
+    object-fit: fill; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clickable-video:hover {
+    transform: scale(1.1) rotateX(5deg) rotateY(5deg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}  
+
 @media (max-width: 576px) {
     #portfolio{
         font-size: 20px;
         padding-top: 50px;
         padding-left: 30px;
+    }
+    .video-container {
+        margin-top: 10px;
+    }      
+    .clickable-video {
+        width: 230px; 
+        height: 230px; 
     }
   }
